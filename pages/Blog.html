@@ -1,0 +1,188 @@
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ -->
+
+
+ <!DOCTYPE html>
+ <html lang="es">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <!-- <link rel="stylesheet" href="./css/style.css"> -->
+ 
+   <title>Mi Proyecto con Bootstrap</title>
+   
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+   <!-- Archivo CSS personalizado -->
+   <link rel="stylesheet" href="../css/style.css">
+ </head>
+ 
+ <!-- <style>
+   /* .section-title {
+     color: orange;
+     margin-bottom: 20px;
+   }
+   .section-item {
+     border: 2px solid darkblue; Borde azul oscuro
+     border-radius: 15px; /* Esquinas redondeadas */
+     overflow: hidden;
+     margin-bottom: 20px;
+   }
+   .section-item img {
+     width: 100%;
+     height: auto;
+   }
+   .section-item h3, .section-item p {
+     padding: 15px;
+   }
+   .packages-container {
+     border: 2px solid black; /* Contorno alrededor de las dos opciones */
+     border-radius: 15px; /* Esquinas redondeadas */
+     padding: 10px;
+   } */
+   .packages-item {
+     border: 2px solid blue; /* Borde azul para cada paquete */
+     border-radius: 15px; /* Esquinas redondeadas */
+     margin-bottom: 10px;
+     overflow: hidden;
+   }
+   .packages-item img {
+     width: 100%;
+     height: auto;
+   }
+   .packages-item h3, .packages-item p {
+     padding: 10px;
+   }
+   @media (max-width: 767.98px) {
+     .section-item, .packages-item {
+       margin-bottom: 10px;
+     }
+   }
+ 
+ 
+   .section-title {background-color: chartreuse;}
+ </style> -->
+ 
+ 
+ 
+ <body>
+   <header>
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       <div class="container-fluid">
+         <img src="../assets/images/VIAJES 1 LOGO.ico" alt="Descripción de la imagen" class="img-fluid" style="max-height: 50px;">
+         <!-- <img src="./assets/images/VIAJES 1 LOGO.ico" alt="Descripción de la imagen" class="img-thumbnail"> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+           <ul class="navbar-nav ms-auto">
+             <!-- <li class="nav-item">
+               <a class="nav-link active" href="#">Home</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#">Paquetes</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#">Vuelos</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#">Blog</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+             </li> -->
+             <li class="nav-item">
+                <a class="nav-link active" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/Paquetes.html">Paquetes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/Vuelos.html">Vuelos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/Vuelos.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              </li>
+           </ul>
+         </div>
+       </div>
+     </nav>
+   </header>  
+      <!-- Main Content -->
+    <main class="grid-container">
+       <h1 class="main-title">Blog</h1>
+      <div class="rectangulo">
+        <img src="../assets/images/VIAJES 1 LOGO.ico" alt="Foto 1">
+       <div class="texto">
+          <h2 class="titulo-rectangulo">Consejos Útiles</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis quisquam deleniti reiciendis. Eligendi commodi mollitia exercitationem dolorem unde voluptatibus fugiat, sapiente, ipsam iure ipsa expedita eveniet, consequatur magni illum.</p>
+       </div>
+      </div>
+        <div class="rectangulo">
+            <img src="../assets/images/VIAJES 1 LOGO.ico" alt="Foto 2">
+            <div class="texto">
+                <h2 class="titulo-rectangulo">Seguridad</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, maiores labore, quidem temporibus nihil iure praesentium voluptatem pariatur aliquam eos eaque illo voluptatum, nemo sint mollitia perferendis voluptates minus natus.</p>
+            </div>
+        </div>
+        <div class="rectangulo">
+            <img src="../assets/images/VIAJES 1 LOGO.ico" alt="Foto 3">
+            <div class="texto">
+                <h2 class="titulo-rectangulo">Historias de viajantes</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt a perspiciatis illo perferendis eos repellendus quam ut? Eaque consectetur odit quam, vitae dicta, rerum magnam dolorum id, aliquam eligendi molestiae.</p>
+            </div>
+        </div>
+    </main>
+
+      <footer class="bg-dark text-white py-4">
+        <div class="container">
+          <div class="row">
+            <!-- Columna izquierda: Logo y contacto -->
+            <div class="col-md-4 d-flex align-items-center">
+              <img src="../assets/images/VIAJES 1 LOGO.ico" alt="Logo" class="img-fluid" style="max-height: 50px;">
+              <div class="ms-3">
+                <p class="mb-0">Teléfono: +598 999 999</p>
+                <p class="mb-0">Email: contacto@viajes1.com</p>
+              </div>
+            </div>
+    
+            <!-- Columna central: Derechos reservados -->
+            <div class="col-md-4 text-center">
+              <p class="mb-0">© 2024 Todos los derechos reservados</p>
+            </div>
+             <!-- Columna derecha: Redes sociales -->
+             <div class="col-md-4 text-end">
+              <p class="mb-0">Síguenos:</p>
+              <div>
+                <a href="https://facebook.com" class="text-white footer-icon" target="_blank" aria-label="Facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" class="text-white footer-icon" target="_blank" aria-label="Twitter">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com" class="text-white footer-icon" target="_blank" aria-label="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+      </footer>
+    
+    
+    
+      <!-- Aquí irá tu contenido -->
+      
+      <!-- Bootstrap JS y Popper.js -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>  
+   

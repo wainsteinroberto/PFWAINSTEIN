@@ -1,0 +1,229 @@
+/*    
+ El index y contacto esta  realizado con bootstrap
+ para las otras tres paginas mantengo el header y el footer con bootstrap. pero no me quedo bien en algunas paginas, intente arreglar con css. complicado
+ despues trabaje con grid
+ en vuelos no me quedo la imagen */
+
+
+
+ /* estilo del index, no alcanzo solo con el bootstrap */
+ 
+ .section-title {
+    color: orange;
+    margin-bottom: 20px;
+  }
+  .section-item {
+    border: 2px solid darkblue; /* Borde azul oscuro */
+    border-radius: 15px; 
+    overflow: hidden; 
+    margin-bottom: 10px;
+    max-width: 800px
+  }
+  .section-item img { 
+    width: 100%;    
+    height: 20vh;
+  }
+  .section-item h3, .section-item p {
+    padding: 15px;
+  }
+  .packages-container {
+    border: 2px solid black; /* Contorno alrededor de las dos opciones */
+    border-radius: 15px; /* Esquinas redondeadas */
+    padding: 5px;
+  }
+  .packages-item {
+    border: 2px solid blue; /* Borde azul para cada paquete */
+    border-radius: 15px; /* Esquinas redondeadas */
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  .packages-item img {
+    width: 100%;
+    height:170px;
+  }
+  .packages-item h3, .packages-item p { 
+    padding: 10px;
+  } 
+  @media (max-width: 767.98px) {
+    .section-item, .packages-item {
+      margin-bottom: 10px;
+    } 
+  } 
+/* 
+  .section-title {background-color: chartreuse;}
+</style> */ */
+
+
+
+
+/* estilo del formulario de contacto*/
+
+
+
+.contact-form-container {
+  background-color: #fff; /* Fondo blanco */
+  border: 1px solid #000; /* Borde negro */
+  border-radius: 10px; /* Esquinas redondeadas */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+  max-width: 800px; /* Ancho máximo */
+  margin: auto; /* Centrar horizontalmente */
+  margin: 50px auto;
+}
+.contact-form-title {
+  font-size: 2rem; /* Tamaño de fuente grande */
+  margin-bottom: 10px;
+  /* color: #333; Color del texto */
+  color:#f57c00;
+}
+.form-control, .form-select, .form-textarea {
+  border-radius: 5px; /* Esquinas redondeadas en los campos */
+}
+.form-textarea {
+  height: 150px; /* Altura del campo de texto */
+}
+.btn-submit {
+  background-color: green; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Esquinas redondeadas */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 1rem; /* Tamaño de fuente */
+}
+.btn-submit:hover {
+  background-color: darkgreen; /* Color de fondo en hover */
+}
+.form-check-label {
+  margin-left: 5px; /* Espaciado a la izquierda de la etiqueta */
+}
+
+
+ */
+
+
+
+/* estilo del blog */
+
+.main-title-blog {
+  color: #f57c00;
+  margin-bottom: 20px;  font-size: 2rem;} 
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.main-title {
+  grid-column: 1 / -1;
+  font-size: 2rem;
+  color: #f57c00;
+  margin-bottom: 10px;
+}
+
+.rectangulo {
+  display: flex;
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #060606;
+  border-radius: 5px;
+  align-items: center;
+  width: 100%;
+
+} 
+
+
+/* .rectangulo {
+  display: flex;
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #060606;
+  border-radius: 5px;
+  align-items: center;
+  width: 200px; Ajusta el tamaño según tus necesidades */
+  /* height: 150px; Ajusta el tamaño según tus necesidades
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: Agrega una sombra para mejorar el diseño */
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rectangulo img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 1rem;
+}s
+
+.texto {
+  flex: 1;
+}
+
+.titulo-rectangulo {
+  color: #007bff;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin: 0;
+  color: #666;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .rectangulo {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .rectangulo img {
+      margin-bottom: 1rem;
+      margin-right: 0;
+  }
+} 
+
+*/
+/* .main-title {
+  color: f57cÑmargin-bottom: 20px;  font-size: 2rem;} /* Tamaño de fuente grande */
+
+
+/* .btn-submit {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.btn-submit:hover {
+  background-color: #218838;
+}
+
+.right-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+} */
+ */ */
