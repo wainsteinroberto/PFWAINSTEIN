@@ -92,7 +92,7 @@
   padding: 20
 }
 
-/* Footer */
+.Footer 
 
 /* 
  
@@ -101,10 +101,10 @@
   /* color: #fff;
   padding: 20px; /* Ajusta el espaciado interno */
   /* text-align: center;
-  margin-top: 20px; Espacio encima del footer */ */
-  */
- */
+  margin-top: 20px; Espacio encima del footer */ 
+  
+ 
 .footer .container {
   max-width: 1200px; /* Asegura que el contenido del footer esté bien alineado */
   margin: 0 auto;
-  height: 5vh;  }
+  height: 200vh;  } 
