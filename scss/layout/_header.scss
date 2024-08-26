@@ -1,0 +1,25 @@
+// Estilos del header
+.logo-header {
+  max-height: 25px; // Reduce el tamaño del logo en el header
+  width: auto;
+}
+
+
+
+
+// Animación para el logo
+@keyframes logoBounce {
+    0%, 100% {
+      transform: translateY(0); // Posición inicial
+    }
+    50% {
+      transform: translateY(-10px); // Movimiento hacia arriba
+    }
+  }
+  
+  .logo {
+    max-height: 50px;
+    animation: logoBounce 2s infinite; // Aplicar la animación
+  }
+    
+

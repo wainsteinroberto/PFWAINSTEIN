@@ -1,0 +1,329 @@
+.btn-orange {
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 1.5s ease-in-out, color 1.5s ease-in-out;
+  animation: colorChange 3s infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: orange;
+    color: white;
+  }
+  50% {
+    background-color: white;
+    color: orange;
+  }
+  100% {
+    background-color: orange;
+    color: white;
+  }
+}
+.section-item,
+.packages-item {
+  position: relative;
+  padding-bottom: 50px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.section-item img,
+.packages-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.form-control, .form-select, .form-textarea {
+  border-radius: 5px;
+}
+
+.form-textarea {
+  height: 150px;
+}
+
+.form-check-label {
+  margin-left: 5px;
+}
+
+@keyframes logoBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.logo {
+  max-height: 50px;
+  animation: logoBounce 2s infinite;
+}
+
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 200vh;
+}
+
+@keyframes logoBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.logo {
+  max-height: 50px;
+  animation: logoBounce 2s infinite;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+main.blog .container {
+  margin-top: 2rem;
+}
+main.blog .row .col-md-12 .blog-post {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+main.blog .row .col-md-12 .blog-post .row {
+  align-items: center;
+}
+main.blog .row .col-md-12 .blog-post .row .col-md-4 img {
+  border-radius: 8px;
+  border: 2px solid #ddd;
+}
+main.blog .row .col-md-12 .blog-post .row .col-md-8 .post-title {
+  color: orange;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+main.blog .row .col-md-12 .blog-post .row .col-md-8 .post-text {
+  font-size: 1rem;
+  color: #333;
+}
+
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 200vh;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+main .container {
+  margin-top: 2rem;
+}
+main .row .col-md-6.d-flex {
+  justify-content: center;
+  align-items: center;
+}
+main .row .col-md-6 .form-container {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ccc;
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+}
+main .row .col-md-6 .form-container .title {
+  color: orange;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+  animation: moveTitle 5s infinite;
+}
+main .row .col-md-6 .form-container .form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+main .row .col-md-6 .form-container .form-control {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+main .row .col-md-6 .form-container .date-container, main .row .col-md-6 .form-container .quantity-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+main .row .col-md-6 .form-container .date-container div, main .row .col-md-6 .form-container .quantity-container div {
+  flex: 1;
+}
+main .row .col-md-6 .form-container .btn-submit {
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+main .row .col-md-6 .form-container .btn-submit:hover {
+  background-color: white;
+  color: orange;
+}
+main .row .col-md-6 .image-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+main .row .col-md-6 .image-container img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+@keyframes moveTitle {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+@keyframes moveTitle {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(10px);
+  }
+}
+@keyframes moveLogo {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+.contact-form-area {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-title {
+  color: orange;
+  animation: moveTitle 3s infinite alternate;
+}
+
+.btn-submit {
+  background-color: green;
+  color: white;
+  border: none;
+}
+.btn-submit:hover {
+  background-color: #004d00;
+}
+
+.logo {
+  animation: moveLogo 3s infinite alternate;
+  max-height: 50px;
+}
+
+.footer-logo {
+  max-height: 50px;
+  animation: moveLogo 3s infinite alternate;
+}
+
+@media (max-width: 767.98px) {
+  .logo,
+  .footer-logo {
+    max-height: 40px;
+  }
+  .contact-form-area {
+    padding: 15px;
+  }
+}
+@keyframes logoBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.logo {
+  max-height: 50px;
+  animation: logoBounce 2s infinite;
+}
+
+main h1, main h2, main h3, main h4, main h5, main h6 {
+  color: orange;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.animate-title {
+  color: orange;
+  font-size: 2.5rem;
+  font-weight: bold;
+  animation: colorChange 5s infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    color: orange;
+  }
+  50% {
+    color: white;
+    background-color: orange;
+  }
+  100% {
+    color: orange;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

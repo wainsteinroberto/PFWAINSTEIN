@@ -1,67 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="../css/paquetes.css">
-  <title>Mi Proyecto con Bootstrap</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de excursiones para vacaciones">
+    <meta name="keywords" content="Vuelos, Viajes, excursiones, Reservas, Salidas, Llegadas, vacaciones, familia">
+    <meta name="author" content="tito">
+    <meta name="robots" content="index, follow">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Oferta de Paquetes</title>
+  </head>
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <img src="../assets/images/VIAJES 1 LOGO.ico" alt="Descripción de la imagen" class="img-fluid" style="max-height: 50px;">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="../assets/images/VIAJES 1 LOGO.ico" alt="Logo" class="logo" style="max-height: 50px;">      
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link active" href="../index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="../pages/Paquetes.html">Paquetes</a></li>
-            <li class="nav-item"><a class="nav-link" href="../pages/Vuelos.html">Vuelos</a></li>
-            <li class="nav-item"><a class="nav-link" href="../pages/Blog.html">Blog</a></li>
-            <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/Paquetes.html">Paquetes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/Vuelos.html">Vuelos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/Blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-  </header>
-  
-  <main class="main.paquetes">
-    <div class="container paquetes">
-      <div class="box paquetes">
-        <img src="../assets/images/Disney/android-chrome-512x512.png" alt="Foto 1">
-        <div class="text. paquetes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus delectus impedit laborum veritatis, molestiae unde voluptates aut repellat ad?</div>
-      </div>
-      <div class="box paquetes">
-        <img src="../assets/images/Disney/android-chrome-512x512.png" alt="Foto 2">
-        <div class="text.paquetes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus harum reprehenderit natus earum debitis voluptas est error magnam ullam perspiciatis.</div>
-      </div>
-      <div class="box paquetes">
-        <img src="../assets/images/Disney/android-chrome-512x512.png" alt="Foto 3">
-        <div class="text.paquetes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis velit qui cumque natus repellat alias voluptatibus nulla modi sint ipsam.</div>
-      </div>
-      <div class="box paquetes">
-        <img src="../assets/images/Disney/android-chrome-512x512.png" alt="Foto 4">
-        <div class="text.paquetes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti placeat, ut non enim assumenda provident blanditiis nostrum magni quaerat doloribus?</div>
-      </div>
-      <div class="box paquetes">
-        <img src="../assets/images/Disney/android-chrome-512x512.png" alt="Foto 5">
-        <div class="text.paquetes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium illum minima ratione quae rerum nisi culpa? Facilis voluptas ut aperiam.</div>
-      </div>
-      <div class="box paquetes">
-        <img src="../assets/images/Disney/android-chrome-512x512.png" alt="Foto 6">
-        <div class="text.paquetes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum suscipit quo laborum pariatur enim amet id possimus veniam illo quas!</div>
-      </div>
+  </header>  
+  <main>
+    <div class="container my-5">
+        <h1 class="animate-title text-center fw-bold mb-5">Oferta de Paquetes</h1>
+
+        <div class="row">
+            <!-- fila 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="section-item p-3 border border-secondary rounded">
+                    <h3 class="text-center">Europa Increible</h3>
+                    <img src="../assets/images/crucero/android-chrome-512x512.png" alt="Destacado 1" class="img-fluid">
+                    <p>USD 50 por pax. Base familiar</p>
+                    <p>Áereo en primera y hoteles 5 Estrellas</p>
+                    <a href="#compra" class="btn btn-orange float-end">Compra ahora</a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="section-item p-3 border border-secondary rounded">
+                    <h3 class="text-center">Asia</h3>
+                    <img src="../assets/images/turquia/android-chrome-512x512.png" alt="Destacado 2" class="img-fluid">
+                    <p>USD 50 por pax. Base familiar</p>
+                    <p>Áereo en primera y hoteles 5 Estrellas</p>
+                    <a href="#compra" class="btn btn-orange float-end">Compra ahora</a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="section-item p-3 border border-secondary rounded">
+                    <h3 class="text-center">New York</h3>
+                    <img src="../assets/images/New York/android-chrome-512x512.png" alt="Destacado 3" class="img-fluid">
+                    <p>USD 50 por pax. Base familiar</p>
+                    <p>Áereo en primera y hoteles 5 Estrellas</p>
+                    <a href="#compra" class="btn btn-orange float-end">Compra ahora</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- fila 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="section-item p-3 border border-secondary rounded">
+                    <h3 class="text-center">Brasil</h3>
+                    <img src="../assets/images/Rio de Janeiro/android-chrome-512x512.png" alt="Destacado 4" class="img-fluid">
+                    <p>USD 50 por pax. Base familiar</p>
+                    <p>Áereo en primera y hoteles 5 Estrellas</p>
+                    <a href="#compra" class="btn btn-orange float-end">Compra ahora</a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="section-item p-3 border border-secondary rounded">
+                    <h3 class="text-center">Crucero</h3>
+                    <img src="../assets/images/crucero/android-chrome-512x512.png" alt="Paquete 1" class="img-fluid">
+                    <p>Crucero por el Mediterráneo con Visitas a Barcelona</p>
+                    <p>7 días todo incluido por solo 300 euros</p>
+                    <a href="#compra" class="btn btn-orange float-end">Compra ahora</a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="section-item p-3 border border-secondary rounded">
+                    <h3 class="text-center">Disney</h3>
+                    <img src="../assets/images/Disney/android-chrome-512x512.png" alt="Paquete 2" class="img-fluid">
+                    <p>Disney y todos los parques</p>
+                    <p>USD 500 por pax. Base familiar</p>
+                    <a href="#compra" class="btn btn-orange float-end">Compra ahora</a>
+                </div>
+            </div>
+        </div>
     </div>
-  </main>
+  </main>  
   <footer class="bg-dark text-white py-4">
     <div class="container">
       <div class="row">
-        <!-- Columna izquierda: Logo y contacto -->
         <div class="col-md-4 d-flex align-items-center">
           <img src="../assets/images/VIAJES 1 LOGO.jpeg" alt="Logo" class="img-fluid" style="max-height: 50px;">
           <div class="ms-3">
@@ -70,18 +120,17 @@
           </div>
         </div>
 
-        <!-- Columna central: Derechos reservados -->
         <div class="col-md-4 text-center">
           <p class="mb-0">© 2024 Todos los derechos reservados</p>
         </div>
-         <!-- Columna derecha: Redes sociales -->
-         <div class="col-md-4 text-end">
+        
+        <div class="col-md-4 text-end">
           <p class="mb-0">Síguenos:</p>
           <div>
-            <a href="https://facebook.com" class="text-white footer-icon" target="_blank" aria-label="Facebook">
+            <a href="https://facebook.com" class="text-white footer-icon me-2" target="_blank" aria-label="Facebook">
               <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="https://twitter.com" class="text-white footer-icon" target="_blank" aria-label="Twitter">
+            <a href="https://twitter.com" class="text-white footer-icon me-2" target="_blank" aria-label="Twitter">
               <i class="fab fa-twitter"></i>
             </a>
             <a href="https://instagram.com" class="text-white footer-icon" target="_blank" aria-label="Instagram">
@@ -90,6 +139,8 @@
           </div>
         </div>
       </div>
+    </div>
   </footer>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

@@ -1,0 +1,261 @@
+.btn-orange {
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 1.5s ease-in-out, color 1.5s ease-in-out;
+  animation: colorChange 3s infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: orange;
+    color: white;
+  }
+  50% {
+    background-color: white;
+    color: orange;
+  }
+  100% {
+    background-color: orange;
+    color: white;
+  }
+}
+.section-item,
+.packages-item {
+  position: relative;
+  padding-bottom: 50px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.section-item img,
+.packages-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.animate-title {
+  animation: slideIn 2s ease-in-out;
+}
+
+.btn-orange {
+  background-color: orange;
+  color: white;
+}
+.btn-orange:hover {
+  background-color: darkorange;
+}
+
+h1 {
+  color: orange;
+}
+
+.p-4 {
+  height: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.form-control, .form-select, .form-textarea {
+  border-radius: 5px;
+}
+
+.form-textarea {
+  height: 150px;
+}
+
+.form-check-label {
+  margin-left: 5px;
+}
+
+.section-title {
+  color: orange;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.btn-orange {
+  background-color: orange;
+  color: white;
+  border: none;
+}
+.btn-orange:hover {
+  background-color: darkorange;
+}
+
+.animate-title {
+  animation: slideIn 2s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.btn-orange {
+  background-color: orange;
+  color: white;
+}
+
+.btn-orange:hover {
+  background-color: darkorange;
+}
+
+.logo-header {
+  max-height: 25px;
+  width: auto;
+}
+
+@keyframes logoBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.logo {
+  max-height: 50px;
+  animation: logoBounce 2s infinite;
+}
+
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 200vh;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.animate-title {
+  animation: slideIn 2s ease-in-out;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.btn-orange {
+  background-color: orange;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+.btn-orange:hover {
+  background-color: darkorange;
+}
+
+.section-item {
+  padding: 1.5rem;
+  border: 1px solid #6c757d;
+  border-radius: 0.25rem;
+}
+.section-item h3 {
+  text-align: center;
+  color: orange;
+  margin-bottom: 1rem;
+}
+.section-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+}
+.section-item p {
+  margin-bottom: 0.5rem;
+}
+.section-item a {
+  float: right;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .section-item {
+    padding: 1rem;
+  }
+  .btn-orange {
+    padding: 0.4rem 0.8rem;
+  }
+}
+main .text-orange {
+  color: orange;
+}
+main .btn-orange {
+  background-color: orange;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+main .btn-orange:hover {
+  background-color: #cc8400;
+}
+main .form-control {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #6c757d;
+  border-radius: 0.25rem;
+}
+main .border {
+  border: 1px solid #6c757d;
+}
+main .rounded {
+  border-radius: 0.25rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

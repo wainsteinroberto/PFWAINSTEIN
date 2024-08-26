@@ -1,0 +1,87 @@
+// variable
+$orange: orange;
+$darkorange: darkorange;
+$border-color: #6c757d; 
+$container-padding: 1.5rem; 
+
+// mixins
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+// estilos globales
+body {
+  font-family: Arial, sans-serif;
+}
+
+// título con animación
+.animate-title {
+  animation: slideIn 2s ease-in-out;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+// animaciones
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+// botón naranja
+.btn-orange {
+  background-color: $orange;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $darkorange;
+  }
+}
+
+.section-item {
+  padding: $container-padding;
+  border: 1px solid $border-color;
+  @include border-radius(0.25rem);
+
+  h3 {
+    text-align: center;
+    color: $orange;
+    margin-bottom: 1rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    float: right;
+    text-decoration: none;
+  }
+}
+
+// Responsive adjustments (opcional)
+@media (max-width: 768px) {
+  .section-item {
+    padding: 1rem;
+  }
+
+  .btn-orange {
+    padding: 0.4rem 0.8rem;
+  }
+}
