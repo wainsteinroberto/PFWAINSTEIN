@@ -1,1 +1,30 @@
-ref: refs/heads/main
+0000000000000000000000000000000000000000 e8aef0eeb14b33c43bbdb9aee14cfcc89da063d4 Roberto Wainstein <wainsteinroberto@gmail.com> 1723933255 -0300	commit (initial): primera cargade proyecto en repositorio local
+e8aef0eeb14b33c43bbdb9aee14cfcc89da063d4 e8aef0eeb14b33c43bbdb9aee14cfcc89da063d4 Roberto Wainstein <wainsteinroberto@gmail.com> 1723933587 -0300	checkout: moving from master to header
+e8aef0eeb14b33c43bbdb9aee14cfcc89da063d4 0000000000000000000000000000000000000000 Roberto Wainstein <wainsteinroberto@gmail.com> 1723935019 -0300	Branch: renamed refs/heads/header to refs/heads/main
+0000000000000000000000000000000000000000 e8aef0eeb14b33c43bbdb9aee14cfcc89da063d4 Roberto Wainstein <wainsteinroberto@gmail.com> 1723935019 -0300	Branch: renamed refs/heads/header to refs/heads/main
+e8aef0eeb14b33c43bbdb9aee14cfcc89da063d4 e8aef0eeb14b33c43bbdb9aee14cfcc89da063d4 Roberto Wainstein <wainsteinroberto@gmail.com> 1723935421 -0300	checkout: moving from main to vuelos
+e8aef0eeb14b33c43bbdb9aee14cfcc89da063d4 e8aef0eeb14b33c43bbdb9aee14cfcc89da063d4 Roberto Wainstein <wainsteinroberto@gmail.com> 1723936226 -0300	checkout: moving from vuelos to master
+e8aef0eeb14b33c43bbdb9aee14cfcc89da063d4 e8aef0eeb14b33c43bbdb9aee14cfcc89da063d4 Roberto Wainstein <wainsteinroberto@gmail.com> 1723936400 -0300	checkout: moving from master to footerv
+e8aef0eeb14b33c43bbdb9aee14cfcc89da063d4 e8aef0eeb14b33c43bbdb9aee14cfcc89da063d4 Roberto Wainstein <wainsteinroberto@gmail.com> 1724020338 -0300	checkout: moving from footerv to master
+e8aef0eeb14b33c43bbdb9aee14cfcc89da063d4 5a9f53443e6abc0f2fcc84dfbf7bc9c562b14204 Roberto Wainstein <wainsteinroberto@gmail.com> 1724020432 -0300	commit: cambio de css en vuelos para resolver el footer
+5a9f53443e6abc0f2fcc84dfbf7bc9c562b14204 e8aef0eeb14b33c43bbdb9aee14cfcc89da063d4 Roberto Wainstein <wainsteinroberto@gmail.com> 1724020632 -0300	checkout: moving from master to footerv
+e8aef0eeb14b33c43bbdb9aee14cfcc89da063d4 c1a4c25c10753de2aaddf87d24c749b98a029125 Roberto Wainstein <wainsteinroberto@gmail.com> 1724021386 -0300	commit: ajustes necesarios para entregar mas prolijo
+c1a4c25c10753de2aaddf87d24c749b98a029125 45dfab530b8c9f25fb19a881abbea434667a0c65 Roberto Wainstein <wainsteinroberto@gmail.com> 1724023582 -0300	commit: mejora vuelos html
+45dfab530b8c9f25fb19a881abbea434667a0c65 5a9f53443e6abc0f2fcc84dfbf7bc9c562b14204 Roberto Wainstein <wainsteinroberto@gmail.com> 1724023721 -0300	checkout: moving from footerv to master
+5a9f53443e6abc0f2fcc84dfbf7bc9c562b14204 e8aef0eeb14b33c43bbdb9aee14cfcc89da063d4 Roberto Wainstein <wainsteinroberto@gmail.com> 1724024007 -0300	checkout: moving from master to main
+e8aef0eeb14b33c43bbdb9aee14cfcc89da063d4 e8aef0eeb14b33c43bbdb9aee14cfcc89da063d4 Roberto Wainstein <wainsteinroberto@gmail.com> 1724024085 -0300	checkout: moving from main to main
+e8aef0eeb14b33c43bbdb9aee14cfcc89da063d4 5a9f53443e6abc0f2fcc84dfbf7bc9c562b14204 Roberto Wainstein <wainsteinroberto@gmail.com> 1724024291 -0300	checkout: moving from main to master
+5a9f53443e6abc0f2fcc84dfbf7bc9c562b14204 ec60281954a2336b914e2207678d853f0796a89f roberto Wainstein <wainsteinroberto@gmail.com> 1724692227 -0300	commit: carga inicial
+ec60281954a2336b914e2207678d853f0796a89f 0000000000000000000000000000000000000000 roberto Wainstein <wainsteinroberto@gmail.com> 1724692298 -0300	Branch: renamed refs/heads/master to refs/heads/main
+0000000000000000000000000000000000000000 ec60281954a2336b914e2207678d853f0796a89f roberto Wainstein <wainsteinroberto@gmail.com> 1724692298 -0300	Branch: renamed refs/heads/master to refs/heads/main
+ec60281954a2336b914e2207678d853f0796a89f 0000000000000000000000000000000000000000 roberto Wainstein <wainsteinroberto@gmail.com> 1724692641 -0300	Branch: renamed refs/heads/main to refs/heads/main
+ec60281954a2336b914e2207678d853f0796a89f ec60281954a2336b914e2207678d853f0796a89f roberto Wainstein <wainsteinroberto@gmail.com> 1724692641 -0300	Branch: renamed refs/heads/main to refs/heads/main
+ec60281954a2336b914e2207678d853f0796a89f 0000000000000000000000000000000000000000 roberto Wainstein <wainsteinroberto@gmail.com> 1725754514 -0300	Branch: renamed refs/heads/main to refs/heads/main
+ec60281954a2336b914e2207678d853f0796a89f ec60281954a2336b914e2207678d853f0796a89f roberto Wainstein <wainsteinroberto@gmail.com> 1725754514 -0300	Branch: renamed refs/heads/main to refs/heads/main
+ec60281954a2336b914e2207678d853f0796a89f 9b99fb107d6cf7a22b1858d1062056680ff17a30 roberto Wainstein <wainsteinroberto@gmail.com> 1725754548 -0300	commit: first commit
+9b99fb107d6cf7a22b1858d1062056680ff17a30 0000000000000000000000000000000000000000 roberto Wainstein <wainsteinroberto@gmail.com> 1725754549 -0300	Branch: renamed refs/heads/main to refs/heads/main
+9b99fb107d6cf7a22b1858d1062056680ff17a30 9b99fb107d6cf7a22b1858d1062056680ff17a30 roberto Wainstein <wainsteinroberto@gmail.com> 1725754549 -0300	Branch: renamed refs/heads/main to refs/heads/main
+9b99fb107d6cf7a22b1858d1062056680ff17a30 0000000000000000000000000000000000000000 roberto Wainstein <wainsteinroberto@gmail.com> 1725754589 -0300	Branch: renamed refs/heads/main to refs/heads/main
+9b99fb107d6cf7a22b1858d1062056680ff17a30 9b99fb107d6cf7a22b1858d1062056680ff17a30 roberto Wainstein <wainsteinroberto@gmail.com> 1725754589 -0300	Branch: renamed refs/heads/main to refs/heads/main
+9b99fb107d6cf7a22b1858d1062056680ff17a30 0000000000000000000000000000000000000000 roberto Wainstein <wainsteinroberto@gmail.com> 1725812525 -0300	Branch: renamed refs/heads/main to refs/heads/main
+9b99fb107d6cf7a22b1858d1062056680ff17a30 9b99fb107d6cf7a22b1858d1062056680ff17a30 roberto Wainstein <wainsteinroberto@gmail.com> 1725812525 -0300	Branch: renamed refs/heads/main to refs/heads/main
