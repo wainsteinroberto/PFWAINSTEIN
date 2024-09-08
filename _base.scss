@@ -1,0 +1,14 @@
+  
+  // Estilos para el logo, queria usar este tipo de letra pero no me salio. quedaba mucho mejor, con mas estilo
+     
+  $logo-font-family: 'Playwright Cuba',; 
+  $logo-font-size: 2rem;
+  $logo-color: #ff5722;
+  
+  .logo {
+    font-family: $logo-font-family;
+    font-size: $logo-font-size;
+    color: $logo-color;
+  }
+  
+

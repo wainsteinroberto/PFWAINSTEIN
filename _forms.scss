@@ -1,0 +1,328 @@
+//compras de pasajes
+.form-control, 
+.form-select, 
+.form-textarea {
+ border-radius: $border-radius;
+}
+
+.form-textarea {
+  height: 150px;
+}
+
+.form-check-label {
+  margin-left: 5px;
+}
+
+.form-container {
+  background-color: #003366;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 8px;
+
+ 
+}
+.trip-type {color:#FF5722}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.col {
+  flex: 1;
+  margin-right: 10px;
+  margin-left: 10px;
+  min-width: 150px;
+}
+
+label {
+  color: $text-white;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.select, input[type="text"], input[type="date"] {
+  width: calc(100% - 40px); // espacio para el iconoAjustar para dejar espacio para el ícono 
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+ 
+ 
+ .form-container {
+   background-color: $dark-blue;
+   padding: 20px;
+   max-width: 1200px;
+   margin: 0 auto;
+   border-radius: 8px;
+ }
+ 
+  
+  label {
+  color: #fff; 
+  font-weight: bold;
+  }
+ 
+  select {
+  border: 1px solid #ff5722; // borde naranja para el select
+  border-radius: 4px;
+  padding: 0.5rem;
+  color: #333; 
+ 
+  option {
+    color: #333; // color dentro del select
+    }
+   }
+ }
+ 
+ // estilo encabezado
+ h4 {
+ color: #FF5722; 
+ }
+
+
+.text-center{color: #ff5722;} 
+//.sel-ciu {color: #ff5722}
+
+
+
+
+// Estilos para las secciones
+.section-item {
+  background-color: #fff; // fondo blanco para cada elemento
+  padding: 20px;
+  border-radius: 8px; 
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // sombra
+  display: flex; // flexbox para alinear el contenido
+  flex-direction: column; // contenido vertical
+  height: 100%; // cada sección ocupe el 100% del alto
+  box-sizing: border-box; // incluye padding y border en el cálculo del ancho y alto
+}
+
+
+.section-item img {
+  width: 100%; // ajusta el ancho de la imagen al contenedor 
+  height: 200px; // altura fija para todas las imágenes 
+  object-fit: cover; // imagen cubre el área del contenedor sin distorsionarse 
+  border-radius: 8px; // bordes redondeado
+  display: block; // Elimina el espacio blanco debajo de la imagen 
+}
+
+
+
+
+
+h3 {
+  margin-bottom: 10px; 
+}
+
+p {
+  margin-bottom: 10px; 
+}
+
+.btn-buy {
+  background-color: #ff5722; // color del botón
+  color: white; // color del texto del botón
+  border: none; // Sin borde
+  border-radius: 4px; // bordes redondeados del botón
+  padding: 10px 20px; // espaciado interno del botón
+  text-transform: uppercase; // texto en mayúsculas
+  font-weight: bold; // texto en negrita
+  display: inline-block;
+  transition: background-color 0.3s; // Transición suave
+
+  &:hover {
+    background-color: #e64a19; // color del botón al pasar el cursor
+  }
+}
+
+// estilos para el container
+.container-fluid {
+  padding-left: 15px; 
+  padding-right: 15px;
+}
+
+.row {
+  margin-left: 0; 
+  margin-right: 0;
+}
+
+.col-md-6 {
+  flex: 0 0 50%; 
+  max-width: 50%;
+}
+
+//  Queries para pantallas chicas
+@media (max-width: 768px) {
+  .col-md-6 {
+    flex: 0 0 100%; 
+    max-width: 100%;
+  }
+}
+
+// Queries para pantallas chicas y en vertical
+@media (max-width: 576px) {
+  .section-item {
+    padding: 15px;
+  }
+
+  .btn-buy {
+    padding: 8px 16px; 
+  }
+}
+
+.text-title {
+  color: #FF5722; // código de color naranja
+}
+
+
+
+
+
+
+//formulario de contacto
+.container {
+  .contact-form-area {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    text-align: left; 
+    padding: 2rem;
+
+    .contact-form-title {
+      font-size: 2rem; // grande
+      color: #ff5722; 
+      margin-bottom: 2rem; 
+    }
+
+    .contact-form {
+      width: 100%;
+      max-width: 600px; 
+      margin: 0 auto;   
+
+      .form-label {
+        font-weight: bold;
+        color: #003366; 
+        margin-bottom: 0.5rem;
+      }
+
+      .form-control,
+      .form-select {
+        border-radius: 8px;
+        border: 1px solid #ff5722; // borde verde
+        padding: 0.75rem;
+        font-size: 1rem;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+        &:focus {
+          border-color: darken(#28a745, 10%); // Oscurecer el verde en el foco
+          box-shadow: 0 0 5px rgba(#28a745, 0.5);
+        }
+      }
+
+      .search-btn {
+        display: block; // hacer que el botón sea un bloque
+        margin: 1.5rem auto 0; 
+        background-color: #ff6600; 
+        color: #fff;
+        font-weight: bold;
+        padding: 0.9rem 1.8rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: darken(#ff6600, 10%);
+        }
+      }
+    }
+  }
+}
+
+
+
+//blog
+.text-orange {
+  color: #fff; 
+  font-size: 1.5rem; // tamaño título
+  margin-bottom: 1rem; 
+}
+
+p {
+  color: #333; // color de texto
+  line-height: 1.6; 
+}
+// Variables de Color
+$orange: #FF6600;
+$dark-blue: #003366;
+
+// Mixins SCSS
+@mixin input-style {
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  &:focus {
+    border-color: $orange;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+}
+
+@mixin button-style($bg-color, $hover-color) {
+  background-color: $bg-color;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  display: block; 
+  margin: 1.5rem auto 0;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+// estilos del Formulario
+.ticket-purchase-form {
+  background-color: #f8f9fa;
+  border: 1px solid #ff5722;
+  padding: 1.5rem;
+  border-radius: 8px;
+
+  .contact-form-title {
+    color: $orange; 
+    text-align: center;
+  }
+
+  .form-label {
+    font-weight: bold;
+    color: $dark-blue; 
+  }
+
+  input[type="text"],
+  input[type="date"],
+  select.form-select {
+    @include input-style;
+    margin-bottom: 1rem;
+  }
+
+  .custom-btn {
+    @include button-style($orange, darken($orange, 10%));
+  }
+}
+
+.text-dark-blue {
+  color: $dark-blue;
+}

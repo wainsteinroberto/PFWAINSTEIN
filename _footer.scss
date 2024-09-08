@@ -1,0 +1,95 @@
+
+.custom-footer {
+  width: 100%;
+  background-color: #003366; 
+  color: #ffffff; 
+  padding: 20px 0; // padding superior e inferior
+  margin: 0; 
+
+  .container-fluid {
+    padding: 0; 
+    margin: 0; // sin margen
+  }
+
+  .row {
+    margin: 0; 
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+
+    .col-md-4 {
+      padding: 0; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center;
+      text-align: center; 
+      flex-direction: column;
+      
+
+      &.d-flex {
+        align-items: center; //
+        justify-content: center;
+      }
+
+      &.text-end {
+        text-align: center;
+        margin-top: 20px; 
+        color:#ffffff
+      }
+
+      &.text-center {
+        text-align: center; 
+        margin-top: 20px; 
+        color:#ffffff
+      }
+    }
+  }
+
+  .footer-icon {
+    margin: 0 10px; // espacio entre íconos
+    color: #ffffff;
+
+    &:hover {
+      color: #cccccc; 
+    }
+  }
+
+  .logo {
+    font-family: 'Playwright Cuba', sans-serif;
+    font-size: 2rem;
+    color: #ff5722;
+  }
+}
+
+.text-footer{color: #ffffff
+}
+
+// responsibile
+@media (max-width: 768px) {
+  .custom-footer .row {
+    flex-direction: column; 
+    align-items: center; // 
+    width: 100%;
+    margin: 0;
+  }
+
+  .custom-footer .col-md-4 {
+    text-align: center; // centrar texto en móviles
+    margin-bottom: 10px; // espacio entre secciones
+    flex-direction: column; //flex en columna para cada columna
+    justify-content: center; // centrar el contenido horizontalmente
+    align-items: center; // centrar el contenido verticalmente
+  }
+
+  .footer-icon {
+    margin: 0 10px; 
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-footer .col-md-4 {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px; 
+  }
+}

@@ -1,0 +1,83 @@
+// logo, no me salio lo que queria. no pude
+.logo {
+  font-family: 'Playwright Cuba', sans-serif;
+  font-size: 24px; 
+  font-weight: 700; 
+  color: #ff5722; 
+}
+
+.logo-header {
+  color: #ff5722;
+}
+
+//header
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333; 
+}
+
+.navbar-brand {
+  flex: 1;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  flex: 2;
+  
+  .nav-link {
+    color: #ffffff; 
+    margin: 0 10px; 
+
+    &:hover {
+      color: #ff5722; 
+    }
+
+    &.active {
+      color: #ffffff !important; 
+      background-color: transparent; 
+    }
+  }
+}
+
+//hamburguesa
+.navbar-toggler {
+  border-color: #ffffff; 
+  background-color: transparent; 
+  padding: 0; 
+  border-radius: 0; 
+}
+
+.navbar-toggler-icon {
+  background-image: linear-gradient(white, white), 
+                    linear-gradient(white, white), 
+                    linear-gradient(white, white); // rayitas blancas
+  background-size: 30px 2px, 30px 2px, 30px 2px; 
+  background-position: center; // centradas
+  width: 30px; 
+  height: 24px; 
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    display: none; 
+  }
+
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    background-color: #333; 
+  }
+
+  .navbar-toggler {
+    display: block; //mMuestra el botón de hamburguesa en pantallas pequeñas
+  }
+  
+  .navbar-collapse.show {
+    display: flex; 
+  }
+}

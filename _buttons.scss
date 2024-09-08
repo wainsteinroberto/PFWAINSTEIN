@@ -1,0 +1,20 @@
+
+// clase de botón
+.search-btn {
+  background-color: #ff5722; // naranja inicial
+  color: white;
+  border: none;
+  border-radius: 25px; 
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+  animation: pulse-animation 4s infinite; // aplicar la animación
+
+  &:hover {
+    background-color: white;
+    color: #ff5722; // naranja
+  }
+}
+
+
+
