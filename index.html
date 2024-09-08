@@ -8,174 +8,202 @@
   <meta name="author" content="tito">
   <meta name="robots" content="index, follow">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playwright+Cuba:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
   <title>index sitio viajes 1</title>
-  <!-- <style>
-    .animate-title {
-        animation: slideIn 2s ease-in-out;
-    }
-
-    @keyframes slideIn {
-        from {
-            transform: translateX(-100%);
-            opacity: 0;
-        }
-        to {
-            transform: translateX(0);
-            opacity: 1;
-        }
-    }
-
-    .btn-orange {
-        background-color: orange;
-        color: white;
-    }
-
-    .btn-orange:hover {
-        background-color: darkorange;
-    }
-</style> -->
 </head>
-
-
-
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <img src="./assets/images/VIAJES 1 LOGO.ico" alt="Descripción de la imagen" class="logo" style="max-height: 50px;">      
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg" style="background-color: #003366;"> 
+       <div class="container-fluid">
+        <!-- queria hacer otra cosa -->
+        <div class="logo-header">
+          <h1>Viajes1.com</h1>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- separador de wp y tel -->
+        <div class="d-flex justify-content-center w-100">
+          <div class="d-flex align-items-center">
+            <a href="https://wa.me/12345678900?text=Hola,%20me%20gustaría%20más%20información%20sobre%20sus%20servicios" target="_blank" class="text-white me-3" style="text-decoration: none;">
+              <i class="fab fa-whatsapp fa-lg"></i> WhatsApp
+            </a>
+            <span class="text-white"> 097495350</span>
+          </div>
+        </div>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="/index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/Paquetes.html">Paquetes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/Vuelos.html">Vuelos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/Blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-            </li>
-          </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/Paquetes.html">Paquetes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/Vuelos.html">Vuelos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/Blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+          </li>
+        </ul>
         </div>
       </div>
     </nav>
-  </header>  
-     
+  </header>
   <main class="container my-4">
-    <div class="row"> 
-      <!-- Destacados -->
-      <div class="col-lg-8 col-md-12 mb-4">
-        <h2 class="section-title text-orange">Destacados</h2>
-        <div class="row">
-          <div class="col-md-6 mb-4">
-            <div class="section-item p-3 border border-secondary rounded">
-              <h3 class="text-center text-orange">Europa Increíble</h3>
-              <img src="./assets/images/paris/android-chrome-512x512.png" alt="Destacado 1" class="img-fluid">
-              <p>USD 50 por pax. Base familiar</p>
-              <p>Áereo en primera y hoteles 5 Estrellas</p>
-              <a href="#compra" class="btn btn-orange float-end">Compra ahora</a>
+        <div class="form-container">
+          <form>
+              <!-- primera parte -->
+              <div class="row" >
+                  <H4>Selecciona tu próximo destino</H4>
+                  <div class="col form-group">
+                      <label for="trip-type">Ida y Vuelta:</label>
+                      <select id="trip-type" name="trip-type">
+                          <option value="one-way">Solo Ida</option>
+                          <option value="round-trip">Ida y Vuelta</option>
+                      </select>
+                  </div>
+                  <div class="col form-group">
+                      <label for="passengers">Número de Pasajeros:</label>
+                      <select id="passengers" name="passengers">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5+</option>
+                      </select>
+                  </div>
+                  <div class="col form-group">
+                      <label for="class">Clase:</label>
+                      <select id="class" name="class">
+                          <option value="economy">Económica</option>
+                          <option value="business">Business</option>
+                          <option value="first">Primera Clase</option>
+                      </select>
+                  </div>
+                  <div class="col form-group">
+                      <label for="flexible-dates">Fechas Flexibles:</label>
+                      <select id="flexible-dates" name="flexible-dates">
+                          <option value="yes">Sí</option>
+                          <option value="no">No</option>
+                      </select>
+                  </div>
+              </div>
+<!--          segunda parte -->
+              <div class="row">
+                  <div class="col">
+                      <label for="departure-city">Ciudad de Salida:</label>
+                      <div class="input-container">
+                        <i class="fas fa-map-marker-alt sel-ciu"></i> <!-- icono -->  
+                        <input type="text" id="departure-city" name="departure-city" placeholder="Ciudad de Salida">
+                      </div>
+                  </div>                
+                  <div class="col">
+                      <label for="arrival-city">Ciudad de Llegada:</label>
+                      <div class="input-container">
+                          <i class="fas fa-map-marker-alt sel-ciu"></i> <!-- icono -->
+                          <input type="text" id="arrival-city" name="arrival-city" placeholder="Ciudad de Llegada">
+                      </div>
+                  </div>
+                  <div class="col">
+                      <label for="departure-date">Fecha de Salida:</label>
+                      <input type="date" id="departure-date" name="departure-date">
+                  </div>
+                  <div class="col">
+                      <label for="arrival-date">Fecha de Llegada:</label>
+                      <input type="date" id="arrival-date" name="arrival-date">
+                  </div>
+                  <div class="col">
+                      <button type="submit" class="search-btn">
+                          <i class="fas fa-search"></i> Buscar
+                      </button>
+                  </div>
+              </div>
+          </form>
+        </div>
+        <section class="section-destacados">
+          <h2 class="section-title text-orange">Destacados</h2>
+        </section>
+        <div class="container-fluid mt-5">
+          <!-- <h2 class="section-title text-orange">Destacados</h2> -->
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <div class="section-item">
+                <h3 class="text-center text-title">Europa Increíble</h3>
+                <img src="./assets/images/londres.jpg" alt="Destacado 1" class="img-fluid">
+                <P>20 Dias recorriendo España, Francia, Italia, Andorra</P>
+                 <h3>USD 1.100</h3> 
+                <a href="./pages/Compras.html" class="btn btn-buy">Compra ahora</a>
+              </div>
             </div>
-          </div>
-          <div class="col-md-6 mb-4">
-            <div class="section-item p-3 border border-secondary rounded">
-              <h3 class="text-center text-orange">Asia</h3>
-              <img src="./assets/images/turquia/android-chrome-512x512.png" alt="Destacado 2" class="img-fluid">
-              <p>USD 50 por pax. Base familiar</p>
-              <p>Áereo en primera y hoteles 5 Estrellas</p>
-              <a href="#compra" class="btn btn-orange float-end">Compra ahora</a>
+            <div class="col-md-6 mb-4">
+              <div class="section-item">
+                <h3 class="text-center text-title">Asia</h3>
+                <img src="./assets/images/asia.jpg" alt="Destacado 2" class="img-fluid">
+                <P>Vietnam, Laos y Cambodia</P>
+                <h3>USD 2.900</h3>
+                <a href="./pages/Compras.html" class="btn btn-buy">Compra ahora</a>
+              </div>
             </div>
-          </div>
-          <div class="col-md-6 mb-4">
-            <div class="section-item p-3 border border-secondary rounded">
-              <h3 class="text-center text-orange">New York</h3>
-              <img src="./assets/images/New York/android-chrome-512x512.png" alt="Destacado 3" class="img-fluid">
-              <p>USD 50 por pax. Base familiar</p>
-              <p>Áereo en primera y hoteles 5 Estrellas</p>
-              <a href="#compra" class="btn btn-orange float-end">Compra ahora</a>
+            <div class="col-md-6 mb-4">
+              <div class="section-item">
+                <h3 class="text-center text-title">New York</h3>
+                <img src="./assets/images/ny.jpg" alt="Destacado 3" class="img-fluid">
+                <p>Áereo en primera y hoteles 5 Estrellas</p>
+                <H3>USD 890</H3>
+                <a href="./pages/Compras.html" class="btn btn-buy">Compra ahora</a>
+              </div>
             </div>
-          </div>
-          <div class="col-md-6 mb-4">
-            <div class="section-item p-3 border border-secondary rounded">
-              <h3 class="text-center text-orange">Brasil</h3>
-              <img src="./assets/images/Rio de Janeiro/android-chrome-512x512.png" alt="Destacado 4" class="img-fluid">
-              <p>USD 50 por pax. Base familiar</p>
-              <p>Áereo en primera y hoteles 5 Estrellas</p>
-              <a href="#compra" class="btn btn-orange float-end">Compra ahora</a>
+            <div class="col-md-6 mb-4">
+              <div class="section-item">
+                <h3 class="text-center text-title">Vacaciones de Setiembre Brasil</h3>
+                <img src="./assets/images/brasil.jpg" alt="Destacado 4" class="img-fluid">
+                <p>Brasil-rio de janeirio</p>
+                <h3>USD 290</h3>
+                <a href="./pages/Compras.html" class="btn btn-buy">Compra ahora</a>
+              </div>
             </div>
           </div>
         </div>
-      </div> 
-  
-      <!-- Paquetes -->
-      <div class="col-lg-4 col-md-10"> 
-        <h2 class="section-title text-orange">Paquetes</h2>
-        <div class="packages-container">
-          <div class="packages-item mb-4 p-3 border border-secondary rounded">
-            <h3 class="text-center text-orange">Crucero</h3>
-            <img src="./assets/images/crucero/android-chrome-512x512.png" alt="Paquete 1" class="img-fluid">
-            <p>Crucero por el Mediterráneo con Visitas a Barcelona</p>
-            <p>7 días todo incluido por solo 300 euros</p>
-            <a href="#compra" class="btn btn-orange float-end">Compra ahora</a>
+    </main>        
+    <footer class="custom-footer py-4">
+      <div class="container-fluid px-0">
+        <div class="row mx-0">
+          <div class="col-md-4 d-flex align-items-center">
+            <div class="logo">Viajes1.com</div>
+            <div class="ms-3">
+              <h5>Teléfono: +598 999 999</h5>
+              <h5>Email: contacto@viajes1.com</h5>
+             </div>
           </div>
-          <div class="packages-item p-3 border border-secondary rounded">
-            <h3 class="text-center text-orange">Disney</h3>
-            <img src="./assets/images/Disney/android-chrome-512x512.png" alt="Paquete 2" class="img-fluid">
-            <p>Disney y todos los parques</p>
-            <p>USD 500 por pax. Base familiar</p>
-            <a href="#compra" class="btn btn-orange float-end">Compra ahora</a>
+           <div class="col-md-4 text-center">
+            <h5>© 2024 Todos los derechos reservados</h5>
+          </div>
+          <div class="col-md-4 text-end">
+            <h5>Síguenos</h5>
+            <div>
+              <a href="https://facebook.com" class="text-white footer-icon me-2" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com" class="text-white footer-icon me-2" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://instagram.com" class="text-white footer-icon" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </main> 
-  
-
-  <footer class="bg-dark text-white py-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 d-flex align-items-center">
-          <img src="./assets/images/VIAJES 1 LOGO.jpeg" alt="Logo" class="img-fluid" style="max-height: 50px;">
-          <div class="ms-3">
-            <p class="mb-0">Teléfono: +598 999 999</p>
-            <p class="mb-0">Email: contacto@viajes1.com</p>
-          </div>
-        </div>
-
-        <div class="col-md-4 text-center">
-          <p class="mb-0">© 2024 Todos los derechos reservados</p>
-        </div>
-        
-        <div class="col-md-4 text-end">
-          <p class="mb-0">Síguenos:</p>
-          <div>
-            <a href="https://facebook.com" class="text-white footer-icon me-2" target="_blank" aria-label="Facebook">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://twitter.com" class="text-white footer-icon me-2" target="_blank" aria-label="Twitter">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://instagram.com" class="text-white footer-icon" target="_blank" aria-label="Instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-  
 </body>
-</html>
+</html> 
 
