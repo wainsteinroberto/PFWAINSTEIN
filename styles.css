@@ -1,0 +1,593 @@
+@keyframes colorChange {
+  0% {
+    background-color: #ff5722;
+    color: white;
+  }
+  50% {
+    background-color: white;
+    color: #ff5722;
+  }
+  100% {
+    background-color: #ff5722;
+    color: white;
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes logoBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.section-item .img-fluid {
+  transition: transform 0.5s ease-in-out;
+}
+.section-item .img-fluid:hover {
+  transform: rotate(360deg);
+}
+
+.btn-buy {
+  transition: background-color 0.3s ease;
+}
+.btn-buy:hover {
+  background-color: darkorange;
+}
+
+@keyframes weirdAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    color: #ff5722;
+    text-shadow: 0 0 5px #ff5722;
+  }
+  25% {
+    transform: scale(1.2) rotate(10deg);
+    opacity: 0.8;
+    color: #ff7e55;
+    text-shadow: 0 0 15px #ee3900;
+  }
+  50% {
+    transform: scale(1) rotate(-10deg);
+    opacity: 1;
+    color: #ee3900;
+    text-shadow: 0 0 10px #ff5722;
+  }
+  75% {
+    transform: scale(1.2) rotate(10deg);
+    opacity: 0.8;
+    color: #ff7e55;
+    text-shadow: 0 0 15px #ee3900;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    color: #ff5722;
+    text-shadow: 0 0 5px #ff5722;
+  }
+}
+.title-blog {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  animation: weirdAnimation 5s infinite;
+  color: #ff5722;
+}
+
+@keyframes slideInOut {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  25% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  75% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+.section-destacados {
+  background-color: #FF5722;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  animation: slideInOut 10s ease-in-out infinite;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+  .section-destacados {
+    padding: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .section-destacados {
+    padding: 6px;
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 480px) {
+  .section-destacados {
+    padding: 4px;
+    font-size: 0.8em;
+  }
+}
+.search-btn {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+  animation: pulse-animation 4s infinite;
+}
+.search-btn:hover {
+  background-color: white;
+  color: #ff5722;
+}
+
+.form-control,
+.form-select,
+.form-textarea {
+  border-radius: 5px;
+}
+
+.form-textarea {
+  height: 150px;
+}
+
+.form-check-label {
+  margin-left: 5px;
+}
+
+.form-container {
+  background-color: #003366;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.trip-type {
+  color: #FF5722;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.col {
+  flex: 1;
+  margin-right: 10px;
+  margin-left: 10px;
+  min-width: 150px;
+}
+
+label {
+  color: white;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.select, input[type=text], input[type=date] {
+  width: calc(100% - 40px);
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+.form-group .form-container {
+  background-color: #ff5722;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+.form-group label {
+  color: #fff;
+  font-weight: bold;
+}
+.form-group select {
+  border: 1px solid #ff5722;
+  border-radius: 4px;
+  padding: 0.5rem;
+  color: #333;
+}
+.form-group select option {
+  color: #333;
+}
+
+h4 {
+  color: #FF5722;
+}
+
+.text-center {
+  color: #ff5722;
+}
+
+.section-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.section-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.btn-buy {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+.btn-buy:hover {
+  background-color: #e64a19;
+}
+
+.container-fluid {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.col-md-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+@media (max-width: 768px) {
+  .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .section-item {
+    padding: 15px;
+  }
+  .btn-buy {
+    padding: 8px 16px;
+  }
+}
+.text-title {
+  color: #FF5722;
+}
+
+.container .contact-form-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 2rem;
+}
+.container .contact-form-area .contact-form-title {
+  font-size: 2rem;
+  color: #ff5722;
+  margin-bottom: 2rem;
+}
+.container .contact-form-area .contact-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.container .contact-form-area .contact-form .form-label {
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+.container .contact-form-area .contact-form .form-control,
+.container .contact-form-area .contact-form .form-select {
+  border-radius: 8px;
+  border: 1px solid #ff5722;
+  padding: 0.75rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.container .contact-form-area .contact-form .form-control:focus,
+.container .contact-form-area .contact-form .form-select:focus {
+  border-color: #1e7e34;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+.container .contact-form-area .contact-form .search-btn {
+  display: block;
+  margin: 1.5rem auto 0;
+  background-color: #ff6600;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.9rem 1.8rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.container .contact-form-area .contact-form .search-btn:hover {
+  background-color: #cc5200;
+}
+
+.text-orange {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: #333;
+  line-height: 1.6;
+}
+
+.ticket-purchase-form {
+  background-color: #f8f9fa;
+  border: 1px solid #ff5722;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+.ticket-purchase-form .contact-form-title {
+  color: #FF6600;
+  text-align: center;
+}
+.ticket-purchase-form .form-label {
+  font-weight: bold;
+  color: #003366;
+}
+.ticket-purchase-form input[type=text],
+.ticket-purchase-form input[type=date],
+.ticket-purchase-form select.form-select {
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.ticket-purchase-form input[type=text]:focus,
+.ticket-purchase-form input[type=date]:focus,
+.ticket-purchase-form select.form-select:focus {
+  border-color: #FF6600;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.ticket-purchase-form .custom-btn {
+  background-color: #FF6600;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  margin: 1.5rem auto 0;
+  transition: background-color 0.3s ease;
+}
+.ticket-purchase-form .custom-btn:hover {
+  background-color: #cc5200;
+}
+
+.text-dark-blue {
+  color: #003366;
+}
+
+.logo {
+  font-family: "Playwright Cuba", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ff5722;
+}
+
+.logo-header {
+  color: #ff5722;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+}
+
+.navbar-brand {
+  flex: 1;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  flex: 2;
+}
+.navbar-nav .nav-link {
+  color: #ffffff;
+  margin: 0 10px;
+}
+.navbar-nav .nav-link:hover {
+  color: #ff5722;
+}
+.navbar-nav .nav-link.active {
+  color: #ffffff !important;
+  background-color: transparent;
+}
+
+.navbar-toggler {
+  border-color: #ffffff;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+.navbar-toggler-icon {
+  background-image: linear-gradient(white, white), linear-gradient(white, white), linear-gradient(white, white);
+  background-size: 30px 2px, 30px 2px, 30px 2px;
+  background-position: center;
+  width: 30px;
+  height: 24px;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    display: none;
+  }
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+  }
+  .navbar-toggler {
+    display: block;
+  }
+  .navbar-collapse.show {
+    display: flex;
+  }
+}
+.custom-footer {
+  width: 100%;
+  background-color: #003366;
+  color: #ffffff;
+  padding: 20px 0;
+  margin: 0;
+}
+.custom-footer .container-fluid {
+  padding: 0;
+  margin: 0;
+}
+.custom-footer .row {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.custom-footer .row .col-md-4 {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.custom-footer .row .col-md-4.d-flex {
+  align-items: center;
+  justify-content: center;
+}
+.custom-footer .row .col-md-4.text-end {
+  text-align: center;
+  margin-top: 20px;
+  color: #ffffff;
+}
+.custom-footer .row .col-md-4.text-center {
+  text-align: center;
+  margin-top: 20px;
+  color: #ffffff;
+}
+.custom-footer .footer-icon {
+  margin: 0 10px;
+  color: #ffffff;
+}
+.custom-footer .footer-icon:hover {
+  color: #cccccc;
+}
+.custom-footer .logo {
+  font-family: "Playwright Cuba", sans-serif;
+  font-size: 2rem;
+  color: #ff5722;
+}
+
+.text-footer {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .custom-footer .row {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+  .custom-footer .col-md-4 {
+    text-align: center;
+    margin-bottom: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-icon {
+    margin: 0 10px;
+  }
+}
+@media (max-width: 576px) {
+  .custom-footer .col-md-4 {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+}
+.logo {
+  font-family: "Playwright Cuba";
+  font-size: 2rem;
+  color: #ff5722;
+}
+
+section-destacados {
+  margin-top: 5rem;
+}
+
+.contact-form-title {
+  color: #FF5722;
+}
+
+/*# sourceMappingURL=styles.css.map */
