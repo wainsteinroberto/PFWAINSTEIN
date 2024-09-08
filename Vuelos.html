@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página de Vuelos con formulario de búsqueda y opciones de viaje">
+  <meta name="keywords" content="Vuelos, aereos, compania, Viajes, Reservas, Salidas, Llegadas, vacaciones, familia">
+  <meta name="author" content="tito">
+  <meta name="robots" content="vuelos, follow">
+  <title>Vuelos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Vuelos</title>
+</head>
+<body>
+  <header></header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #003366;"> <!-- Cambié el color aquí -->
+      <div class="container-fluid">
+        <div class="logo-header">
+          <h1>Viajes1.com</h1>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-flex justify-content-center w-100">
+          <div class="d-flex align-items-center">
+            <a href="https://wa.me/12345678900?text=Hola,%20me%20gustaría%20más%20información%20sobre%20sus%20servicios" target="_blank" class="text-white me-3" style="text-decoration: none;">
+              <i class="fab fa-whatsapp fa-lg"></i> WhatsApp
+            </a>
+            <span class="text-white"> 097495350</span>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/Paquetes.html">Paquetes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/Vuelos.html">Vuelos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/Blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container my-4">
+        <div class="form-container">
+          <form>
+              <div class="row" >
+                  <H4>Selecciona tu próximo destino</H4>
+                  <div class="col form-group">
+                      <label for="trip-type">Ida y Vuelta:</label>
+                      <select id="trip-type" name="trip-type">
+                          <option value="one-way">Solo Ida</option>
+                          <option value="round-trip">Ida y Vuelta</option>
+                      </select>
+                  </div>
+                  <div class="col form-group">
+                      <label for="passengers">Número de Pasajeros:</label>
+                      <select id="passengers" name="passengers">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5+</option>
+                      </select>
+                  </div>
+                  <div class="col form-group">
+                      <label for="class">Clase:</label>
+                      <select id="class" name="class">
+                          <option value="economy">Económica</option>
+                          <option value="business">Business</option>
+                          <option value="first">Primera Clase</option>
+                      </select>
+                  </div>
+                  <div class="col form-group">
+                      <label for="flexible-dates">Fechas Flexibles:</label>
+                      <select id="flexible-dates" name="flexible-dates">
+                          <option value="yes">Sí</option>
+                          <option value="no">No</option>
+                      </select>
+                  </div>
+              </div>
+         <!-- Segunda Fila -->
+              <div class="row">
+                  <div class="col">
+                    <label for="departure-city">Ciudad de Salida:</label>
+                      <div class="input-container">
+                        <i class="fas fa-map-marker-alt sel-ciu"></i> <!-- Ícono para Ciudad de Salida -->  
+                        <input type="text" id="departure-city" name="departure-city" placeholder="Ciudad de Salida">
+                      </div>
+                  </div>
+                  <div class="col">
+                      <label for="arrival-city">Ciudad de Llegada:</label>
+                      <div class="input-container">
+                          <i class="fas fa-map-marker-alt sel-ciu"></i> <!-- Ícono para Ciudad de Llegada -->
+                          <input type="text" id="arrival-city" name="arrival-city" placeholder="Ciudad de Llegada">
+                      </div>
+                  </div>
+                  <div class="col">
+                      <label for="departure-date">Fecha de Salida:</label>
+                      <input type="date" id="departure-date" name="departure-date">
+                  </div>
+                  <div class="col">
+                      <label for="arrival-date">Fecha de Llegada:</label>
+                      <input type="date" id="arrival-date" name="arrival-date">
+                  </div>
+                  <div class="col">
+                      <button type="submit" class="search-btn">
+                          <i class="fas fa-search"></i> Buscar
+                      </button>
+                  </div>
+              </div>
+          </form>
+        </div>
+        <div class="container-fluid mt-5">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="section-item flight">
+              <img src="../assets/images/floripa.jpg" alt="Destacado 1" class="img-fluid">
+              <h3 class="text-center text-title">FLORIANOPOLIS</h3>
+              <p>Hasta en 12 pagos</p>
+              <h4>USD 261</H4>
+              <a href="../pages/Compra.html" class="btn btn-buy">Compra ahora</a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="section-item flight">
+              <img src="../assets/images/madrid.jpg" alt="Destacado 2" class="img-fluid">
+              <h3 class="text-center text-title">MADRID</h3>
+              <p>Hasta en 12 pagos con tarjetas</p>
+              <h4>USD 896</H4>
+              <a href="../pages/Compra.html" class="btn btn-buy">Compra ahora</a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="section-item flight">
+              <img src="../assets/images/miami.jpg" alt="Destacado 3" class="img-fluid">
+              <h3 class="text-center text-title">MIAMI</h3>
+              <p>Hasta en 12 pagos con tarjetas</p>
+              <h4>USD 582</H4>
+              <a href="../pages/Compras.html" class="btn btn-buy">Compra ahora</a>
+            </div>
+          </div>
+    </main> 
+    <footer class="custom-footer py-4">
+      <div class="container-fluid px-0">
+        <div class="row mx-0">
+          <div class="col-md-4 d-flex align-items-center">
+            <div class="logo">Viajes1.com</div>
+            <div class="ms-3">
+              <h5>Teléfono: +598 999 999</h5>
+              <h5>Email: contacto@viajes1.com</h5>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <h5>© 2024 Todos los derechos reservados</h5>
+          </div>
+          <div class="col-md-4 text-end">
+            <h5>Síguenos</h5>
+            <div>
+              <a href="https://facebook.com" class="text-white footer-icon me-2" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com" class="text-white footer-icon me-2" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://instagram.com" class="text-white footer-icon" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

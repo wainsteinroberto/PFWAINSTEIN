@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página de Vuelos con formulario de búsqueda y opciones de viaje">
+  <meta name="keywords" content="Vuelos, aereos, compania, Viajes, Reservas, Salidas, Llegadas, vacaciones, familia">
+  <meta name="author" content="tito">
+  <meta name="robots" content="vuelos, follow">
+  <title>Vuelos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Vuelos</title>
+</head>
+<body>
+  <header></header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #003366;"> <!-- Cambié el color aquí -->
+      <div class="container-fluid">
+        <div class="logo-header">
+          <h1>Viajes1.com</h1>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-flex justify-content-center w-100">
+          <div class="d-flex align-items-center">
+            <a href="https://wa.me/12345678900?text=Hola,%20me%20gustaría%20más%20información%20sobre%20sus%20servicios" target="_blank" class="text-white me-3" style="text-decoration: none;">
+              <i class="fab fa-whatsapp fa-lg"></i> WhatsApp
+            </a>
+            <span class="text-white"> 097495350</span>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/Paquetes.html">Paquetes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/Vuelos.html">Vuelos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/Blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container mb-3">
+      <form class="ticket-purchase-form p-4 rounded shadow">
+        <h1 class="contact-form-title mb-4">Compra de Felicidad</h1>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" required>
+          </div>
+          <div class="col-md-6">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="apellido" required>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="pasaporte" class="form-label">Número de Pasaporte</label>
+          <input type="text" class="form-control" id="pasaporte" required>
+        </div>
+        <div class="mb-3">
+          <label for="fecha-nacimiento" class="form-label">Fecha de Nacimiento</label>
+          <input type="date" class="form-control" id="fecha-nacimiento" required>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="numero-tarjeta" class="form-label">Número de Tarjeta de Crédito</label>
+            <input type="text" class="form-control" id="numero-tarjeta" required>
+          </div>
+          <div class="col-md-3">
+            <label for="validez" class="form-label">Validez (MM/AA)</label>
+            <input type="text" class="form-control" id="validez" placeholder="MM/AA" required>
+          </div>
+          <div class="col-md-3">
+            <label for="codigo-seguridad" class="form-label">Código de Seguridad</label>
+            <input type="text" class="form-control" id="codigo-seguridad" required>
+          </div>
+        </div>
+        <!-- Número de Cuotas -->
+        <div class="mb-3">
+          <label for="cuotas" class="form-label">Número de Cuotas</label>
+          <select class="form-select" id="cuotas" required>
+            <option value="1">1 Cuota</option>
+            <option value="3">3 Cuotas</option>
+            <option value="6">6 Cuotas</option>
+            <option value="12">12 Cuotas</option>
+          </select>
+        </div>
+        <!-- Botón de Culminar -->
+        <div class="text-center">
+          <button type="submit" class="btn custom-btn">Culminar Compra</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer class="custom-footer py-4">
+      <div class="container-fluid px-0">
+        <div class="row mx-0">
+          <div class="col-md-4 d-flex align-items-center">
+            <div class="logo">Viajes1.com</div>
+            <div class="ms-3">
+              <h5>Teléfono: +598 999 999</h5>
+              <h5>Email: contacto@viajes1.com</h5>
+            </div>
+          </div>
+            <div class="col-md-4 text-center">
+            <h5>© 2024 Todos los derechos reservados</h5>
+          </div>
+          <div class="col-md-4 text-end">
+            <h5>Síguenos</h5>
+            <div>
+              <a href="https://facebook.com" class="text-white footer-icon me-2" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com" class="text-white footer-icon me-2" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://instagram.com" class="text-white footer-icon" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
